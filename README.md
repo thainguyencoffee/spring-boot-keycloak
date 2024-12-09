@@ -6,6 +6,7 @@ This project is a fork of the [spring-boot-keycloak](https://github.com/eugenp/t
 <h3 id="about-run"><strong>1.1 Run docker compose</strong></h3>
 
 We would then start the container with the following shell commands:
+
 ```bash
 export KEYCLOAK_ADMIN_PASSWORD=secret
 docker compose up -d
@@ -14,6 +15,7 @@ docker compose up -d
 After running these commands, we can access the Keycloak admin console at `http://localhost:8080` with the username/password: `admin/secet`.
 
 <h3 id="about-run"><strong>1.2 Spring MVC Application with oauth2Login</strong></h3>
+
 ```bash
 cd spring-boot-mvc-client
 ./gradlew bootRun
@@ -22,6 +24,7 @@ cd spring-boot-mvc-client
 After running these commands, we can access the Spring MVC application at `http://localhost:8081`.
 
 <h3 id="about-run"><strong>1.3 Spring Boot Application with oauth2ResourceServer</strong></h3>
+
 ```bash
 cd spring-boot-resource-server
 ./gradlew bootRun
